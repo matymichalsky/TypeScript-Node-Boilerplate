@@ -59,9 +59,10 @@ const spec = routingControllersToSpec(storage, routingControllersOptions, {
   components: {
     schemas,
     securitySchemes: {
-      basicAuth: {
-        scheme: 'basic',
-        type: 'http'
+      bearerAuth: {
+        scheme: 'bearer',
+        type: 'http',
+        bearerFormat: 'JWT'
       }
     }
   },

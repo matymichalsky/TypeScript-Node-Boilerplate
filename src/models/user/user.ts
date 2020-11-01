@@ -43,5 +43,6 @@ export default class User extends BaseEntity {
 
   @DeleteDateColumn(dateColumnOptions())
   @JsonDateFormat()
+  @Exclude()
   deletedAt: DateType
 }
