@@ -1,0 +1,8 @@
+# IDE created folders
+.idea/
+
+# code distribution folder
+/dist
+
+# dependencies
+/node_modules
