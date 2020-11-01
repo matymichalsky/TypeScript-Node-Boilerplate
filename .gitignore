@@ -6,3 +6,8 @@
 
 # dependencies
 /node_modules
+
+# secret keys
+*.pem
+*.key
+*.pub
