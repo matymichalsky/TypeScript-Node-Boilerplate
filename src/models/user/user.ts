@@ -1,7 +1,7 @@
 import {
   BaseEntity,
   Column,
-  CreateDateColumn,
+  CreateDateColumn, DeleteDateColumn,
   Entity,
   Index,
   JoinColumn,
@@ -40,4 +40,8 @@ export default class User extends BaseEntity {
   @CreateDateColumn(dateColumnOptions())
   @JsonDateFormat()
   createdAt: DateType
+
+  @DeleteDateColumn(dateColumnOptions())
+  @JsonDateFormat()
+  deletedAt: DateType
 }
